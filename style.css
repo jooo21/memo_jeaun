@@ -1,0 +1,219 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Faster+One&family=Homemade+Apple&family=Oi&family=Shrikhand&family=Poor+Story&display=swap');
+
+*{
+    padding:0px; margin:0px;
+}
+@media screen and (max-width:1920px){
+    div {
+        width:98%; height:99vh;
+        position: relative;
+        top:0.5vh;
+        left:50%;
+        transform: translateX(-50%);
+        box-sizing: border-box;
+        padding:10px 0px;
+    }
+    div::before{
+        content: "";display: block;
+        width:100%; height:100%;
+        background:url(img/pink2.jpg) no-repeat center/cover;
+        filter:contrast(50%) brightness(0.8);
+        z-index:-3;
+        border:2px solid #fff;
+        border-radius: 50px;
+    }
+    div svg {
+        width:200px;
+        position: absolute;
+        bottom:5%;
+        right:2%;
+    }
+    div svg:nth-of-type(1){display: none;}
+    div svg:nth-of-type(2) path{
+        stroke: #fff;
+        stroke-width: 3;
+        fill:transparent;
+        stroke-dasharray: 1555;
+        stroke-dashoffset: 1555;
+        
+        transition:all 0.4s;
+    }
+    div svg.on path{
+        stroke: #fff;
+        fill:transparent;
+        stroke-dasharray: 1555;
+        stroke-dashoffset: 0;
+        transition:all 1.7s;
+    }
+    div #line {
+        width:600px;
+        stroke:#fff;
+        stroke-width: 3;
+        fill:transparent;
+        position: absolute;
+        top:-30px;
+        left:50%;
+        transform: translateX(-50%);
+        stroke-dasharray: 1042;
+        stroke-dashoffset: 1042;
+    }
+    div #line.on {
+        stroke-dasharray: 1042;
+        stroke-dashoffset: 0;
+    }
+    div #line path:nth-of-type(2) {
+        stroke-width: 1;
+    }
+    
+    p {
+        font:100 50px/1 "Homemade Apple";
+        color:#fff;
+        position:absolute;
+        top:10%;
+        left:50%;
+        transform:translateX(-50%);
+        text-align: center;
+    }
+    p:nth-of-type(1) {
+        top:15%;
+    }
+    p:nth-of-type(2) {
+        font-size:16px;
+        top:11%;
+    }
+    #draggable {
+        width: 500px; height: 400px; padding: 0.5em;
+        position:absolute;
+        top:40%;
+        left:10%;
+        border-radius: 10px;
+        border:1px solid rgba(255, 255, 255, 0.452);
+    }
+    #draggable textarea{ 
+        width:100%; height:100%;
+        background: transparent;
+        font: normal 20px/1.2 "Poor Story";
+        color:#000;
+        background: rgba(255, 255, 255, 0.609);
+        border-radius: 10px;
+        padding:20px;
+        box-sizing: border-box;
+    }
+    #draggable textarea:focus{ 
+        border:0.1px solid rgb(255, 255, 255);
+    }
+    #draggable textarea::placeholder{ 
+        font: normal 20px/1.2 "Poor Story";
+        color:#eee;
+    }
+
+
+
+
+
+}
+@media screen and (max-width:414px) {
+    div {
+        width:98%; height:99vh;
+        position: relative;
+        top:0.5vh;
+        left:50%;
+        transform: translateX(-50%);
+        box-sizing: border-box;
+        padding:0px 5px;
+    }
+    div::before{
+        content: "";display: block;
+        width:100%; height:100%;
+        background:url(img/pink2.jpg) no-repeat center/cover;
+        filter:contrast(50%) brightness(0.8);
+        z-index:-3;
+        /* border:2px solid #fff;
+        border-radius: 50px; */
+    }
+    div svg {
+        width:50%;
+        position: absolute;
+        bottom:5%;
+        right:5%;
+    }
+    div svg:nth-of-type(1){display: none;}
+    div svg:nth-of-type(2) path{
+        stroke: #fff;
+        stroke-width: 3;
+        fill:transparent;
+        stroke-dasharray: 1555;
+        stroke-dashoffset: 1555;
+        
+        transition:all 0.4s;
+    }
+    div svg.on path{
+        stroke: #fff;
+        fill:transparent;
+        stroke-dasharray: 1555;
+        stroke-dashoffset: 0;
+        transition:all 1.7s;
+    }
+    div #line {
+        width:100%;
+        stroke:#fff;
+        stroke-width: 3;
+        fill:transparent;
+        position: absolute;
+        top:30px;
+        left:50%;
+        transform: translateX(-50%);
+        stroke-dasharray: 1042;
+        stroke-dashoffset: 1042;
+    }
+    div #line.on {
+        stroke-dasharray: 1042;
+        stroke-dashoffset: 0;
+    }
+    div #line path:nth-of-type(2) {
+        stroke-width: 1;
+    }
+    #draggable {
+        width: 300px; height: 400px; padding: 0.5em;
+        position:absolute;
+        top:40%;
+        left:50%;
+        transform:translateX(-50%);
+        border-radius: 10px;
+        border:1px solid rgba(255, 255, 255, 0.452);
+    }
+    #draggable textarea{ 
+        width:100%; height:100%;
+        background: transparent;
+        font: normal 20px/1.2 "Poor Story";
+        color:#000;
+        background: rgba(255, 255, 255, 0.609);
+        border-radius: 10px;
+        padding:20px;
+        box-sizing: border-box;
+    }
+    #draggable textarea:focus{ 
+        border:0.1px solid rgb(255, 255, 255);
+    }
+    #draggable textarea::placeholder{ 
+        font: normal 20px/1.2 "Poor Story";
+        color:#eee;
+    }
+    p {
+        font:100 50px/1 "Homemade Apple";
+        color:#fff;
+        position:absolute;
+        top:10%;
+        left:50%;
+        transform:translateX(-50%);
+        text-align: center;
+    }
+    p:nth-of-type(1) {
+        top:15%;
+    }
+    p:nth-of-type(2) {
+        font-size:16px;
+        top:11%;
+    }
+}
